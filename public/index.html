@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Hog & Mug | Order Food and Drinks</title>
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 120'%3E%3Ccircle cx='52' cy='60' r='34' fill='%23f7a8b8'/%3E%3Cellipse cx='52' cy='70' rx='14' ry='10' fill='%23ef8aa2'/%3E%3Crect x='76' y='70' width='30' height='32' rx='6' fill='%235a3825'/%3E%3C/svg%3E">
+<title>Mang Inasal | Order Food and Drinks</title>
+<link rel="icon" href="logo.jpg">
 <style>
   :root {
     --pink: #f7a8b8;
@@ -38,7 +38,7 @@
   }
   .nav { display: flex; align-items: center; justify-content: space-between; height: 72px; gap: 16px; }
   .brand { display: flex; align-items: center; gap: 10px; font-weight: 800; font-size: 1.35rem; color: var(--brown); }
-  .brand svg { width: 48px; height: 48px; }
+  .brand img { width: 48px; height: 48px; object-fit: contain; border-radius: 8px; }
   .nav-links { display: flex; gap: 26px; font-weight: 600; color: var(--brown-light); }
   .nav-links a:hover { color: var(--pink-dark); }
   .cart-btn {
@@ -73,7 +73,7 @@
     background: radial-gradient(circle at 50% 45%, #fde3e9 0%, #fbd0da 55%, transparent 56%);
     display: grid; place-items: center; aspect-ratio: 1;
   }
-  .hero-logo svg { width: 78%; height: auto; filter: drop-shadow(0 12px 18px rgba(90,56,37,.18)); }
+  .hero-logo img { width: 78%; height: auto; object-fit: contain; border-radius: 16px; filter: drop-shadow(0 12px 18px rgba(90,56,37,.18)); }
   .perks { display: flex; gap: 28px; margin-top: 34px; flex-wrap: wrap; }
   .perk strong { display: block; font-size: 1.3rem; color: var(--brown); }
   .perk span { color: var(--muted); font-size: 0.9rem; }
@@ -163,7 +163,7 @@
   .modal-actions { display: flex; gap: 10px; margin-top: 20px; }
   .modal-actions .btn { flex: 1; margin: 0; }
   .success { text-align: center; }
-  .success svg { width: 110px; margin-bottom: 10px; }
+  .success img { width: 110px; margin-bottom: 10px; object-fit: contain; }
   .success p { color: var(--muted); margin-bottom: 18px; }
 
   /* Account menu */
@@ -250,40 +250,9 @@
 </head>
 <body>
 
-<!-- Logo: pig holding a hot cup (reusable SVG symbol) -->
-<svg width="0" height="0" style="position:absolute" aria-hidden="true">
-  <symbol id="logo" viewBox="0 0 126 120">
-    <!-- steam -->
-    <path d="M84 40c-4-5 4-8 0-14M93 40c-4-5 4-8 0-14M102 40c-4-5 4-8 0-14" fill="none" stroke="#b9a090" stroke-width="3" stroke-linecap="round"/>
-    <!-- ears -->
-    <path d="M26 34 L22 12 L42 26 Z" fill="#ef8aa2"/>
-    <path d="M66 26 L84 14 L78 36 Z" fill="#ef8aa2"/>
-    <!-- head -->
-    <circle cx="52" cy="58" r="34" fill="#f7a8b8"/>
-    <!-- cheeks -->
-    <circle cx="30" cy="70" r="6" fill="#f48aa1" opacity=".55"/>
-    <!-- eyes -->
-    <circle cx="40" cy="50" r="4.5" fill="#2e2019"/>
-    <circle cx="62" cy="50" r="4.5" fill="#2e2019"/>
-    <circle cx="41.5" cy="48.5" r="1.4" fill="#fff"/>
-    <circle cx="63.5" cy="48.5" r="1.4" fill="#fff"/>
-    <!-- snout -->
-    <ellipse cx="51" cy="68" rx="14" ry="10" fill="#ef8aa2"/>
-    <ellipse cx="46" cy="68" rx="2.6" ry="3.6" fill="#a8455d"/>
-    <ellipse cx="56" cy="68" rx="2.6" ry="3.6" fill="#a8455d"/>
-    <!-- cup -->
-    <path d="M110 70 q10 0 10 10 q0 10 -10 10" fill="none" stroke="#5a3825" stroke-width="5"/>
-    <path d="M76 46 h36 l-4 50 q-1 6 -7 6 h-14 q-6 0 -7 -6 Z" fill="#5a3825"/>
-    <rect x="74" y="42" width="40" height="7" rx="3.5" fill="#8a5a3c"/>
-    <path d="M82 66 h24" stroke="#f7a8b8" stroke-width="4" stroke-linecap="round"/>
-    <!-- hoof holding cup -->
-    <ellipse cx="78" cy="80" rx="9" ry="7" fill="#f7a8b8" stroke="#ef8aa2" stroke-width="2"/>
-  </symbol>
-</svg>
-
 <header>
   <div class="wrap nav">
-    <a href="#" class="brand"><svg viewBox="0 0 126 120"><use href="#logo"/></svg> <span class="name">Hog &amp; Mug</span></a>
+    <a href="#" class="brand"><img src="logo.jpg" alt="Logo"> <span class="name">Mang Inasal</span></a>
     <nav class="nav-links">
       <a href="#menu">Menu</a>
       <a href="#how">How it works</a>
@@ -321,7 +290,7 @@
           <div class="perk"><strong>7am–10pm</strong><span>Open daily</span></div>
         </div>
       </div>
-      <div class="hero-logo"><svg viewBox="0 0 126 120" role="img" aria-label="Hog & Mug logo: a pig holding a hot cup"><use href="#logo"/></svg></div>
+      <div class="hero-logo"><img src="logo.jpg" alt="Logo"></div>
     </div>
   </section>
 
@@ -350,9 +319,9 @@
 
 <footer id="contact">
   <div class="wrap foot">
-    <a href="#" class="brand"><svg viewBox="0 0 126 120"><use href="#logo"/></svg> Hog &amp; Mug</a>
-    <div>📍 123 Sample Street, Manila &nbsp;·&nbsp; 📞 (02) 1234 5678 &nbsp;·&nbsp; hello@hogandmug.example</div>
-    <div>© <span id="year"></span> Hog &amp; Mug</div>
+    <a href="#" class="brand"><img src="logo.jpg" alt="Logo"> Mang Inasal</a>
+    <div>📍 123 Sample Street, Manila &nbsp;·&nbsp; 📞 (02) 1234 5678 &nbsp;·&nbsp; hello@manginasal.example</div>
+    <div>© <span id="year"></span> Mang Inasal</div>
   </div>
 </footer>
 
@@ -633,7 +602,7 @@
         const first = $("name").value.trim().split(" ")[0];
         $("modalBox").innerHTML = `
           <div class="success">
-            <svg viewBox="0 0 126 120"><use href="#logo"/></svg>
+            <img src="logo.jpg" alt="Logo">
             <h3>Thank you, ${first.replace(/[<>&"]/g, "")}!</h3>
             <p>Order <strong>${order.orderNo}</strong> has been received.<br>Total: <strong>${peso(order.total)}</strong><br>You can follow it under <strong>My orders</strong>.</p>
             <button class="btn" id="doneBtn">Back to menu</button>

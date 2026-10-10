@@ -3,13 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Hog & Mug | Orders</title>
+<title>Mang Inasal | Orders</title>
 <style>
   :root { --pink:#f7a8b8; --pink-dark:#e07a93; --brown:#5a3825; --cream:#fff8f0; --line:#f0e2d6; --muted:#7a6a60; }
   * { box-sizing: border-box; margin: 0; padding: 0; }
   body { font-family: "Segoe UI", system-ui, sans-serif; background: var(--cream); color: #2e2019; }
   header { background: var(--brown); color: #fff; padding: 16px 20px; display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; }
-  header h1 { font-size: 1.25rem; }
+  header h1 { font-size: 1.25rem; display: flex; align-items: center; gap: 10px; }
+  header h1 .logo { height: 40px; width: auto; border-radius: 6px; }
   .controls { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
   select, input, button { font: inherit; padding: 8px 12px; border-radius: 8px; border: 2px solid var(--line); }
   button { background: var(--pink-dark); color: #fff; border: none; font-weight: 700; cursor: pointer; }
@@ -50,7 +51,7 @@
 </head>
 <body>
 <header>
-  <h1>🐷☕ Hog &amp; Mug — Admin</h1>
+  <h1><img src="logo.jpg" alt="Logo" class="logo"> Mang Inasal — Admin</h1>
   <div class="controls" id="controls" hidden>
     <div class="tabs">
       <button class="active" data-view="orders">Orders</button>
